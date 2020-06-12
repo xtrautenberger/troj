@@ -2,7 +2,7 @@
 %
 %   Toolbox TROJ was initialized.
 %   Authors: Trautenberger, Oravec.
-%   The latest update 28.4.2020.
+%   The latest update 12.6.2020.
 %
 
 self_ops
@@ -14,4 +14,4 @@ ops = get_ops; % call ops
 %ops.language = 'DE';
 disp('Toolbox TROJ was initialized.')
 disp('Authors: Trautenberger, Oravec.')   
-disp('The latest update 28.4.2020.')
+disp('The latest update 12.6.2020.')

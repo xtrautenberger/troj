@@ -207,6 +207,21 @@ elseif( isempty(is_flag_no_problem_phase) == 0 )
     p_flag = 1;
 end
 
+if (length(subs_phase_found) >= 2)
+    for k = subs_phase_found
+        a(k) = sub_phase{k};
+    end
+end
+for k = 1:length(subs_phase_found)-1
+    if (isequal(a(k),a(k+1))==0)
+        disp(sprintf(dictionary.message.problem{7},mfilename));
+        flag = -1;
+    end
+end
+
+
+
+
     if ( length(subs_ignored) > 0 )
         flag = -1;
         if (( length(subs_found) == 0 ))

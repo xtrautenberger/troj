@@ -24,14 +24,14 @@ function [rH,out] = reaction_enthalpy(env)
 %   env.T = 800;
 %   [rH,out] = reaction_enthalpy(env)
 %
-%   rH = -4.6351e+04
+%   rH = -1.3018e+05
 %   out = 
 %   struct with fields:
 %     unit: 'J*mol^(-1)'
 %    phase: 'g'
 %     flag: 1
 %     info: 'No problem detected.'
-%      ver: 20200412
+%      ver: 20200612
 %      env: [1×1 struct]
 %
 %   SEE ALSO: MOLAR_HEAT_CAPACITY.
@@ -42,7 +42,7 @@ function [rH,out] = reaction_enthalpy(env)
 %   https://en.wikipedia.org/wiki/Carbon_disulfide,
 %   https://chemiday.com/en/thermodynamic.
 %
-%   LAST UPDATE: 2020-04-26.
+%   LAST UPDATE: 2020-06-12.
 %
 %% Check inputs
 if (600 <= env.T)&(env.T <= 3000)
@@ -54,7 +54,9 @@ else
 end
 
 %% Compute Reaction Entalphy
-rH_298 = -51.17e3; % [J/mol]
+%rH_298 = -51.17e3; % [J/mol]
+rH_298 = -135e3; % [J/mol]
+%rH_298 = -107e3; % [J/mol]
 % Cp1 = (-9.46454303446113e-14).*T.^5+(4.05791640315915e-10).*T.^4+(-6.84295932518711e-07).*T.^3+(0.000543481289054022).*T.^2+(-0.144194370114113).*T+45.6316152199746;
 % Cp2 = ((1.09e-3).*T+36.11-3.51e5*(T.^(-2)));
 % t = T/1000;
