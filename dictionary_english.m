@@ -48,6 +48,8 @@ dictionary.name_cap{306} = 'Ethanoic Acid';
 dictionary.name_cap{307} = 'Oxidan';
 dictionary.name_cap{308} = 'Carbon dioxide';
 %% Trivial-Name
+% Elements
+dictionary_english_elements_trivial
 
 dictionary.trivial_name{201} = 'dihydrogen';
 dictionary.trivial_name{207} = 'dinitrogen';

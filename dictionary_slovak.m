@@ -48,6 +48,8 @@ dictionary.name_cap{306} = 'Kyselina etanova';
 dictionary.name_cap{307} = 'Oxidan';
 dictionary.name_cap{308} = 'Oxid uhlicity';
 %% Trivial-Name
+% Elements
+dictionary_slovak_elements_trivial
 % Bimolecular elements
 dictionary.trivial_name{201} = 'divodik';
 dictionary.trivial_name{207} = 'didusik';

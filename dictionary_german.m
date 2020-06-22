@@ -4,62 +4,94 @@ function dictionary = dictionary_german
 dictionary.language = 'DE';
 
 %% Name
-dictionary.name{1} = 'wasserstoff';
-dictionary.name{6} = 'kohlenstoff';
-dictionary.name{16} = 'schwefel';
+% Elements
+dictionary_german_elements
+% Bimolecular elements
+dictionary.name{201} = 'diwasserstoff';
+dictionary.name{207} = 'distickstoff';
+dictionary.name{208} = 'disauerstoff';
+dictionary.name{209} = 'difluor';
+dictionary.name{216} = 'dischwefel';
+dictionary.name{217} = 'dichlor';
+dictionary.name{235} = 'dibrom';
+dictionary.name{253} = 'diiod';
+% Compounds
+dictionary.name{300} = 'pentadekan';
 dictionary.name{301} = 'methan';
-dictionary.name{302} = 'dischwefel';
+% dictionary.name{302} = '';
 dictionary.name{303} = 'schwefelkohlenstoff';
-dictionary.name{304} = 'schwefelwasserstoff ';
+dictionary.name{304} = 'schwefelwasserstoff';
 dictionary.name{305} = 'methansaeure';
 dictionary.name{306} = 'ethansaeure';
 dictionary.name{307} = 'oxidan';
-dictionary.name{308} = 'carbon dioxide';
-dictionary.name{309} = 'dioxygen';
-dictionary.name{310} = 'dinitrogen';
+dictionary.name{308} = 'kohlenstoffdioxid';
+
 %% Name Capitalized
-dictionary.name_cap{1} = 'Wasserstoff';
-dictionary.name_cap{6} = 'Kohlenstoff';
-dictionary.name_cap{16} = 'Schwefel';
+% Elements_cap
+dictionary_german_elements_cap
+% Bimolecular elements_cap
+dictionary.name_cap{201} = 'Diwasserstoff';
+dictionary.name_cap{207} = 'Distickstoff';
+dictionary.name_cap{208} = 'Disauerstoff';
+dictionary.name_cap{209} = 'Difluor';
+dictionary.name_cap{216} = 'Dischwefel';
+dictionary.name_cap{217} = 'Dichlor';
+dictionary.name_cap{235} = 'Dibrom';
+dictionary.name_cap{253} = 'Diiod';
+% Compounds
+dictionary.name_cap{300} = 'Pentadekan';
 dictionary.name_cap{301} = 'Methan';
-dictionary.name_cap{302} = 'Dischwefel';
+% dictionary.name_cap{302} = '';
 dictionary.name_cap{303} = 'Schwefelkohlenstoff';
-dictionary.name_cap{304} = 'Schwefelwasserstoff ';
+dictionary.name_cap{304} = 'Schwefelwasserstoff';
 dictionary.name_cap{305} = 'Methansaeure';
 dictionary.name_cap{306} = 'Ethansaeure';
 dictionary.name_cap{307} = 'Oxidan';
-dictionary.name_cap{308} = 'Carbon dioxide';
-dictionary.name_cap{309} = 'Dioxygen';
-dictionary.name_cap{310} = 'Dinitrogen';
+dictionary.name_cap{308} = 'Kohlenstoffdioxid';
 %% Trivial-Name
-dictionary.trivial_name{1} = 'Wasserstoff';
-dictionary.trivial_name{6} = 'Kohlenstoff';
-dictionary.trivial_name{16} = 'Schwefel';
-dictionary.trivial_name{301} = 'Methan';
-dictionary.trivial_name{302} = 'Dischwefel';
-dictionary.trivial_name{303} = 'Kohlendisulfid';
-dictionary.trivial_name{304} = 'Netzschwefel';
-dictionary.trivial_name{305} = 'Ameisensaeure';
-dictionary.trivial_name{306} = 'Essigsaeure';
-dictionary.trivial_name{307} = 'water';
-dictionary.trivial_name{308} = 'carbon dioxide';
-dictionary.trivial_name{309} = 'dioxygen';
-dictionary.trivial_name{310} = 'dinitrogen';
+% Elements
+dictionary_german_elements_trivial
+% Bimolecular elements
+dictionary.trivial_name{201} = 'diwasserstoff';
+dictionary.trivial_name{207} = 'distickstoff';
+dictionary.trivial_name{208} = 'disauerstoff';
+dictionary.trivial_name{209} = 'difluor';
+dictionary.trivial_name{216} = 'dischwefel';
+dictionary.trivial_name{217} = 'dichlor';
+dictionary.trivial_name{235} = 'dibrom';
+dictionary.trivial_name{253} = 'diiod';
+% Compounds
+dictionary.trivial_name{300} = 'pentadekan';
+dictionary.trivial_name{301} = 'methan';
+% dictionary.trivial_name{302} = '';
+dictionary.trivial_name{303} = 'kohlendisulfid';
+dictionary.trivial_name{304} = 'netzschwefel';
+dictionary.trivial_name{305} = 'ameisensaeure';
+dictionary.trivial_name{306} = 'essigsaeure';
+dictionary.trivial_name{307} = 'oxidan';
+dictionary.trivial_name{308} = 'kohlendioxid';
 %% Formula
-% dictionary.formula{1} = 'H';
-% dictionary.formula{6} = 'C';
-% dictionary.formula{16} = 'S';
+% Elements
 dictionary_english_elements_formula
+% Bimolecular elements
+dictionary.formula{201} = "H2";
+dictionary.formula{207} = "N2";
+dictionary.formula{208} = "O2";
+dictionary.formula{209} = "F2";
+dictionary.formula{216} = "S2";
+dictionary.formula{217} = "Cl2";
+dictionary.formula{235} = "Br2";
+dictionary.formula{253} = "I2";
+% Compounds
+dictionary.formula{300} = "C15H32";
 dictionary.formula{301} = "CH4";
-dictionary.formula{302} = "S2";
+% dictionary.formula{302} = "";
 dictionary.formula{303} = "CS2";
 dictionary.formula{304} = "H2S";
 dictionary.formula{305} = "HCOOH";
 dictionary.formula{306} = "CH3COOH";
 dictionary.formula{307} = "H2O";
 dictionary.formula{308} = "CO2";
-dictionary.formula{309} = "O2";
-dictionary.formula{310} = "N2";
 %% ID
 dictionary.id = [];
 for k = 1 : length(dictionary.name)
