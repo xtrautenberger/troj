@@ -67,7 +67,7 @@ end
 
 
 % Expand results: 
-sub.id = get_id(opt.name);
-sub.x = opt.x;
+sub{:}.id = get_id(opt.name);
+sub{:}.x = opt.x;
 
 end

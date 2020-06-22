@@ -5,9 +5,9 @@ clc
 ni=[-1 -2 1 2];
 Tf=875; %[K]
 Pf=101.325; %[kPa]
-Ff=[20 50 0 0]; %[mol.h^(-1)]
+Ff=[10 60 0 0]; %[mol.h^(-1)]
 R=8.314; %[J.mol^(-1).K^(-1)]
-[Vr,X]=ode15s(@reaktor,[0 300],[Ff Tf],[],ni,Tf,Pf,R,Ff);
+[Vr,X]=ode15s(@reaktor,[0 10],[Ff Tf],[],ni,Tf,Pf,R,Ff);
 F_CH4 = X(:,1);
 F_S2 = X(:,2);
 F_CS2 = X(:,3);

@@ -50,7 +50,7 @@ function sub = get_subs(varargin)
 %   LAST UPDATE: 2020-04-26.
 %
 for k = 1 : nargin
-   sub{k} = varargin{k};
+   sub(k) = varargin{k};
 end
 
 end
